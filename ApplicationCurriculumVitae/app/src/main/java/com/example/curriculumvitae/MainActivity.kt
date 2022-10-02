@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layoutivity_main)
+        setContentView(R.layouativity_main)
 
         fullName = fullNameField.editText?.text!!
         age = ageField.editText?.text!!
