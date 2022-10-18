@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.cv.cv2p3.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.cv.cv2p3.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_secondFragment_to_lastFragment"
+            app:destination="@id/lastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastFragment"
+        android:name="com.cv.cv2p3.LastFragment"
+        android:label="fragment_last"
+        tools:layout="@layout/fragment_last" >
+        <action
+            android:id="@+id/action_lastFragment_to_careerFragment"
+            app:destination="@id/careerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hobbiesFragment"
+        android:name="com.cv.cv2p3.HobbiesFragment"
+        android:label="fragment_hobbies"
+        tools:layout="@layout/fragment_hobbies" />
+    <fragment
+        android:id="@+id/skillsFragment"
+        android:name="com.cv.cv2p3.SkillsFragment"
+        android:label="fragment_skills"
+        tools:layout="@layout/fragment_skills" />
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.cv.cv2p3.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/careerFragment"
+        android:name="com.cv.cv2p3.CareerFragment"
+        android:label="fragment_career"
+        tools:layout="@layout/fragment_career" />
+</navigation>
